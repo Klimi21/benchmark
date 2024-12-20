@@ -23,3 +23,5 @@ benchmark.createSuite("String concatenate", { time: 1000, description: "Concaten
 	});
 
 benchmark.run();
+//auch als json:
+// benchmark.run().then(res => console.log(res))
