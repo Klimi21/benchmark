@@ -22,6 +22,45 @@ benchmark.createSuite("String concatenate", { time: 1000, description: "Concaten
 		return s.join();
 	});
 
-benchmark.run();
+const fs = require('fs');
+const path = './history.json';
+
+// Function to append data to the JSON file
+function appendData(newData) {
+	// Read the existing data from the file
+	fs.readFile(path, 'utf8', (err, data) => {
+		if (err) {
+			// console.error('Error reading the file:', err);
+			// return;
+			data = "[]";
+		}
+
+		// Parse the existing data
+		let jsonData = [];
+		try {
+			jsonData = JSON.parse(data);
+		} catch (parseErr) {
+			console.error('Error parsing JSON data:', parseErr);
+			return;
+		}
+
+		// Append the new data
+		jsonData.push(newData);
+
+		// Write the updated data back to the file
+		fs.writeFile(path, JSON.stringify(jsonData, null, 2), 'utf8', (writeErr) => {
+			if (writeErr) {
+				console.error('Error writing to the file:', writeErr);
+				return;
+			}
+			console.log('Data successfully appended to the file');
+		});
+	});
+}
+
+
+
+// benchmark.run();
 //auch als json:
 // benchmark.run().then(res => console.log(res))
+benchmark.run().then(res => appendData(res))
