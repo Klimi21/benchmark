@@ -1,0 +1,23 @@
+17.01.24
+
+Raspi 4 Mettmann
+✔ Concat with '+'                 12,802 ops/sec
+✔ Concat with array & join         6,103 ops/sec
+
+Raspi 4 Mettmann (mit Fake NUMA/RAM-Beschleunigung) ==> bringt hier nix
+✔ Concat with '+'                 12,763 ops/sec
+✔ Concat with array & join         6,156 ops/sec
+
+CloudXL (IONOS)
+✔ Concat with '+'                 63,195 ops/sec
+✔ Concat with array & join        26,246 ops/sec
+
+Raspi 4 Hilden (mit Fake NUMA/RAM-Beschleunigung)
+✔ Concat with '+'                 12,303 ops/sec
+✔ Concat with array & join         6,157 ops/sec
+
+S8/Intel(R) Core(TM) i7-3970X CPU @ 3.50GHz   3.50 GHz
+✔ Concat with '+'                 30.344 ops/sec
+✔ Concat with array & join        17.451 ops/sec
+
+H10
