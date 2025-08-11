@@ -21,3 +21,7 @@ S8/Intel(R) Core(TM) i7-3970X CPU @ 3.50GHz   3.50 GHz
 ✔ Concat with array & join        17.451 ops/sec
 
 H10
+
+SL11/CPU: Intel(R) Core(TM) i7-14700 × 28, Memory: 64 GB
+✔ Concat with '+'                126.073 ops/sec
+✔ Concat with array & join        64.882 ops/sec
