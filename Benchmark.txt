@@ -25,3 +25,14 @@ H10
 SL11/CPU: Intel(R) Core(TM) i7-14700 × 28, Memory: 64 GB
 ✔ Concat with '+'                126.073 ops/sec
 ✔ Concat with array & join        64.882 ops/sec
+
+18.09.24
+
+H10/CPU: Intel(R) Core(TM) i5-4690K CPU @ 3.50GHz × 4, Memory: 16 GB
+✔ Concat with '+'                 42.072 ops/sec
+✔ Concat with array & join        21.175 ops/sec
+
+Felicias Gaming PC
+AMD Ryzen 7 5700X 8-core
+✔ Concat with '+'                 83.861 ops/sec
+✔ Concat with array & join        43.058 ops/sec
